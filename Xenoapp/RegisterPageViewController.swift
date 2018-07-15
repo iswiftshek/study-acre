@@ -8,6 +8,7 @@
 
 import UIKit
 
+
 // Setting up the protocol for the segue transition.
 protocol registerNewUserDelegate {
     func parseData()
@@ -188,7 +189,10 @@ class RegisterPageViewController: UIViewController, UIPickerViewDelegate, UIPick
             if(error == nil) {
                 print(response!)
                 let alert = UIAlertController.init(title: "Registeration Successful!", message: "Press back and log in to your ID", preferredStyle: UIAlertControllerStyle.alert)
-                alert.addAction(UIAlertAction.init(title: "OK", style: .cancel, handler: nil))
+                alert.addAction(UIAlertAction.init(title: "OK", style: .cancel, handler: { (abc) in
+                    self.dismiss(animated: true, completion: nil)
+                }))
+//                alert.addAction(UIAlertAction.init(title: "OK", style: .cancel, handler: nil))
                 self.present(alert, animated: true, completion: nil)
                 
             }
@@ -223,12 +227,8 @@ class RegisterPageViewController: UIViewController, UIPickerViewDelegate, UIPick
                 err = error
                 print(err!)
             }*/
-            
         }
         task.resume()
-        
-        
-        
         
     }
     
