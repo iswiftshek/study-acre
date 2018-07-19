@@ -59,11 +59,7 @@ class AdminMenuViewController: UIViewController, UITableViewDataSource, UITableV
         if cell.lblMenuName.text! == "Feedback"
         {
             
-            let mainstoryboard:UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-            let newViewcontroller = mainstoryboard.instantiateViewController(withIdentifier: "FeedbackTeacherViewController") as! FeedbackTeacherViewController
-            let newFrontController = UINavigationController.init(rootViewController: newViewcontroller)
-            
-            revealViewController.pushFrontViewController(newFrontController, animated: true)
+            UIApplication.shared.openURL(NSURL(string:"https://goo.gl/forms/gMoc2g7a7RrZTqR12")! as URL)
             
         }
         
