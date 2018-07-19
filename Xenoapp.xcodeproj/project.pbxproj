@@ -12,6 +12,8 @@
 		FD21824020FB0DDB005DB2F8 /* AdminHelpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD21823F20FB0DDB005DB2F8 /* AdminHelpViewController.swift */; };
 		FD21824220FB1600005DB2F8 /* AdminHelpTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD21824120FB1600005DB2F8 /* AdminHelpTableViewCell.swift */; };
 		FD21824520FB23BD005DB2F8 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD21824420FB23BD005DB2F8 /* MessageUI.framework */; };
+		FD21826520FDEF58005DB2F8 /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD21826420FDEF58005DB2F8 /* ForgotPasswordViewController.swift */; };
+		FD21826720FDF786005DB2F8 /* ForgotIDViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD21826620FDF786005DB2F8 /* ForgotIDViewController.swift */; };
 		FD96E9E820DD39A200954A7A /* AddClassesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD96E9E720DD39A200954A7A /* AddClassesViewController.swift */; };
 		FD96E9EA20DD788800954A7A /* ViewClassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD96E9E920DD788800954A7A /* ViewClassViewController.swift */; };
 		FDA4558C20E6015A0027EDEA /* SubAdminViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA4558B20E6015A0027EDEA /* SubAdminViewController.swift */; };
@@ -49,6 +51,8 @@
 		FD21823F20FB0DDB005DB2F8 /* AdminHelpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminHelpViewController.swift; sourceTree = "<group>"; };
 		FD21824120FB1600005DB2F8 /* AdminHelpTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminHelpTableViewCell.swift; sourceTree = "<group>"; };
 		FD21824420FB23BD005DB2F8 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		FD21826420FDEF58005DB2F8 /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
+		FD21826620FDF786005DB2F8 /* ForgotIDViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotIDViewController.swift; sourceTree = "<group>"; };
 		FD96E9E720DD39A200954A7A /* AddClassesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddClassesViewController.swift; sourceTree = "<group>"; };
 		FD96E9E920DD788800954A7A /* ViewClassViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewClassViewController.swift; sourceTree = "<group>"; };
 		FDA4558B20E6015A0027EDEA /* SubAdminViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubAdminViewController.swift; sourceTree = "<group>"; };
@@ -160,6 +164,8 @@
 				FDD3CD0420F9C3BC001354B1 /* ChangePasswordAdminViewController.swift */,
 				FD21823F20FB0DDB005DB2F8 /* AdminHelpViewController.swift */,
 				FD21824120FB1600005DB2F8 /* AdminHelpTableViewCell.swift */,
+				FD21826420FDEF58005DB2F8 /* ForgotPasswordViewController.swift */,
+				FD21826620FDF786005DB2F8 /* ForgotIDViewController.swift */,
 			);
 			path = Xenoapp;
 			sourceTree = "<group>";
@@ -254,7 +260,9 @@
 				FD0E178620DD2DE0003F2330 /* AddSubjectViewController.swift in Sources */,
 				FDF8EF1020DCA0CD0074AFF5 /* FacultyIDViewController.swift in Sources */,
 				FD96E9EA20DD788800954A7A /* ViewClassViewController.swift in Sources */,
+				FD21826520FDEF58005DB2F8 /* ForgotPasswordViewController.swift in Sources */,
 				FDD3CCFD20F38286001354B1 /* FeedbackTeacherViewController.swift in Sources */,
+				FD21826720FDF786005DB2F8 /* ForgotIDViewController.swift in Sources */,
 				FDBFCE6A20D7666B0064A76D /* myCell.swift in Sources */,
 				FDBE752D20D1260E00D4C15D /* AppDelegate.swift in Sources */,
 				FDD3CCF720F273EB001354B1 /* SWRevealViewController.m in Sources */,
