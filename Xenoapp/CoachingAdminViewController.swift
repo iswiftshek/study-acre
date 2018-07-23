@@ -8,8 +8,35 @@
 
 import UIKit
 
-class CoachingAdminViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
 
+class CoachingAdminViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+    
+ 
+    @IBOutlet weak var backgroundPicture: UIImageView!
+    @IBAction func changeBackgroundImage(_ sender: Any) {
+        let imagePicker = UIImagePickerController()
+        imagePicker.sourceType = .photoLibrary
+        imagePicker.delegate = self
+        
+        self.present(imagePicker, animated: true, completion: nil)
+        
+    }
+    
+    func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
+        picker.dismiss(animated: true, completion: nil)
+    }
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
+        if let image = info[UIImagePickerControllerOriginalImage] as? UIImage {
+            picker.dismiss(animated: true, completion: {
+                //self.helperObject.photoBackground = UIImageJPEGRepresentation(image, 1)
+                self.backgroundPicture.image = image
+            } )
+        
+       }
+    }
+    
+    
     @IBOutlet weak var orangeView3: UIView!
     @IBOutlet weak var myCollectionView3: UICollectionView!
     @IBOutlet weak var btnMenuButton: UIBarButtonItem!
@@ -20,6 +47,7 @@ class CoachingAdminViewController: UIViewController, UICollectionViewDelegate, U
     
     override func viewDidLoad() {
         super.viewDidLoad()
+       
         
         studyAcreLabel3.font = studyAcreLabel3.font.withSize(UIScreen.main.bounds.height/24.53)
         btnMenuButton.target = revealViewController()

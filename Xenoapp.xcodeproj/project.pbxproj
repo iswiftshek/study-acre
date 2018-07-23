@@ -14,6 +14,9 @@
 		FD21824520FB23BD005DB2F8 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD21824420FB23BD005DB2F8 /* MessageUI.framework */; };
 		FD21826520FDEF58005DB2F8 /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD21826420FDEF58005DB2F8 /* ForgotPasswordViewController.swift */; };
 		FD21826720FDF786005DB2F8 /* ForgotIDViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD21826620FDF786005DB2F8 /* ForgotIDViewController.swift */; };
+		FD2182692101C260005DB2F8 /* LoginTypeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD2182682101C260005DB2F8 /* LoginTypeViewController.swift */; };
+		FD25A8F321064F8D00B285C1 /* CoachingAdminViewTeacherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD25A8F221064F8D00B285C1 /* CoachingAdminViewTeacherViewController.swift */; };
+		FD25A8F52106548200B285C1 /* ViewTeachersCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD25A8F42106548200B285C1 /* ViewTeachersCollectionViewCell.swift */; };
 		FD96E9E820DD39A200954A7A /* AddClassesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD96E9E720DD39A200954A7A /* AddClassesViewController.swift */; };
 		FD96E9EA20DD788800954A7A /* ViewClassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD96E9E920DD788800954A7A /* ViewClassViewController.swift */; };
 		FDA4558C20E6015A0027EDEA /* SubAdminViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA4558B20E6015A0027EDEA /* SubAdminViewController.swift */; };
@@ -53,6 +56,9 @@
 		FD21824420FB23BD005DB2F8 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		FD21826420FDEF58005DB2F8 /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
 		FD21826620FDF786005DB2F8 /* ForgotIDViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotIDViewController.swift; sourceTree = "<group>"; };
+		FD2182682101C260005DB2F8 /* LoginTypeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTypeViewController.swift; sourceTree = "<group>"; };
+		FD25A8F221064F8D00B285C1 /* CoachingAdminViewTeacherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoachingAdminViewTeacherViewController.swift; sourceTree = "<group>"; };
+		FD25A8F42106548200B285C1 /* ViewTeachersCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewTeachersCollectionViewCell.swift; sourceTree = "<group>"; };
 		FD96E9E720DD39A200954A7A /* AddClassesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddClassesViewController.swift; sourceTree = "<group>"; };
 		FD96E9E920DD788800954A7A /* ViewClassViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewClassViewController.swift; sourceTree = "<group>"; };
 		FDA4558B20E6015A0027EDEA /* SubAdminViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubAdminViewController.swift; sourceTree = "<group>"; };
@@ -166,6 +172,9 @@
 				FD21824120FB1600005DB2F8 /* AdminHelpTableViewCell.swift */,
 				FD21826420FDEF58005DB2F8 /* ForgotPasswordViewController.swift */,
 				FD21826620FDF786005DB2F8 /* ForgotIDViewController.swift */,
+				FD2182682101C260005DB2F8 /* LoginTypeViewController.swift */,
+				FD25A8F221064F8D00B285C1 /* CoachingAdminViewTeacherViewController.swift */,
+				FD25A8F42106548200B285C1 /* ViewTeachersCollectionViewCell.swift */,
 			);
 			path = Xenoapp;
 			sourceTree = "<group>";
@@ -242,6 +251,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD2182692101C260005DB2F8 /* LoginTypeViewController.swift in Sources */,
 				FDF8EF0E20DA508A0074AFF5 /* myCell2.swift in Sources */,
 				FDD3CCF320F23701001354B1 /* CoachingTeacherViewController.swift in Sources */,
 				FDD3CD0320F771B0001354B1 /* AdminMenuViewController.swift in Sources */,
@@ -261,6 +271,7 @@
 				FDF8EF1020DCA0CD0074AFF5 /* FacultyIDViewController.swift in Sources */,
 				FD96E9EA20DD788800954A7A /* ViewClassViewController.swift in Sources */,
 				FD21826520FDEF58005DB2F8 /* ForgotPasswordViewController.swift in Sources */,
+				FD25A8F321064F8D00B285C1 /* CoachingAdminViewTeacherViewController.swift in Sources */,
 				FDD3CCFD20F38286001354B1 /* FeedbackTeacherViewController.swift in Sources */,
 				FD21826720FDF786005DB2F8 /* ForgotIDViewController.swift in Sources */,
 				FDBFCE6A20D7666B0064A76D /* myCell.swift in Sources */,
@@ -271,6 +282,7 @@
 				FD21824220FB1600005DB2F8 /* AdminHelpTableViewCell.swift in Sources */,
 				FDF8EF1220DCAD5E0074AFF5 /* AdminIDViewController.swift in Sources */,
 				FDD3CCF120F21E83001354B1 /* CoachingStudentViewController.swift in Sources */,
+				FD25A8F52106548200B285C1 /* ViewTeachersCollectionViewCell.swift in Sources */,
 				FDA4558C20E6015A0027EDEA /* SubAdminViewController.swift in Sources */,
 				FD0E178420DD2915003F2330 /* BuildSchoolViewController.swift in Sources */,
 				FD96E9E820DD39A200954A7A /* AddClassesViewController.swift in Sources */,
