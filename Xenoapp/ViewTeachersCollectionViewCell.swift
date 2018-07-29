@@ -8,7 +8,31 @@
 
 import UIKit
 
+
 class ViewTeachersCollectionViewCell: UICollectionViewCell {
     
+    var emp_uid = ""
+    var helpDecide = false
+ 
+    
+    
+    
+    @IBOutlet weak var deleteImage: UIImageView!
+    @IBOutlet weak var forwardArror: UIImageView!
     @IBOutlet weak var nameLabel: UILabel!
+    
+    
+    func editingInProgress() {
+        deleteImage.isHidden = false
+        forwardArror.isHidden = true
+    }
+    
+    func editingDone() {
+        deleteImage.isHidden = true
+        forwardArror.isHidden = false
+    }
+    
+    func necessaryFunction() {
+        deleteImage.isHidden = true
+        }
 }
