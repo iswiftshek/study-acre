@@ -1,22 +1,21 @@
 //
-//  Profile1ViewController.swift
+//  AdminProfileViewController.swift
 //  Xenoapp
 //
-//  Created by Abhishek Sansanwal on 28/07/18.
+//  Created by Abhishek Sansanwal on 29/07/18.
 //  Copyright © 2018 Abhishek Sansanwal. All rights reserved.
 //
 
 import UIKit
 
-class Profile1ViewController: UIViewController {
+class AdminProfileViewController: UITabBarController {
 
-   
-    @IBOutlet weak var genderTextField: UITextField!
+    @IBOutlet weak var btnMenuButton: UIBarButtonItem!
     override func viewDidLoad() {
         super.viewDidLoad()
-  
-       
 
+        btnMenuButton.target = revealViewController()
+        btnMenuButton.action =  #selector(SWRevealViewController.revealToggle(_:))
         // Do any additional setup after loading the view.
     }
 
@@ -37,5 +36,3 @@ class Profile1ViewController: UIViewController {
     */
 
 }
-
-

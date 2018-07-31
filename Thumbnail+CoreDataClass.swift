@@ -1,5 +1,5 @@
 //
-//  Picture+CoreDataClass.swift
+//  Thumbnail+CoreDataClass.swift
 //  Xenoapp
 //
 //  Created by Abhishek Sansanwal on 29/07/18.
@@ -10,7 +10,7 @@
 import Foundation
 import CoreData
 
-@objc(Picture)
-public class Picture: NSManagedObject {
+
+public class Thumbnail: NSManagedObject {
 
 }

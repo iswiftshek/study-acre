@@ -42,6 +42,13 @@ class AdminMenuViewController: UIViewController, UITableViewDataSource, UITableV
             self.present(activityVC, animated: true, completion: nil)
             
         }
+        if cell.lblMenuName.text! == "Profile Details" {
+            let mainstoryboard:UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+            let newViewcontroller = mainstoryboard.instantiateViewController(withIdentifier: "AdminProfileViewController") as! AdminProfileViewController
+            let newFrontController = UINavigationController.init(rootViewController: newViewcontroller)
+            revealViewController.pushFrontViewController(newFrontController, animated: true)
+            
+        }
         if cell.lblMenuName.text! == "Help"
         {
             let mainstoryboard:UIStoryboard = UIStoryboard(name: "Main", bundle: nil)

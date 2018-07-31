@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FD04CB30210DCDCA008776CD /* BackgroundPicture.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FD04CB2E210DCDCA008776CD /* BackgroundPicture.xcdatamodeld */; };
+		FD04CB35210DD533008776CD /* FullRes+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD04CB31210DD532008776CD /* FullRes+CoreDataClass.swift */; };
+		FD04CB36210DD533008776CD /* FullRes+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD04CB32210DD532008776CD /* FullRes+CoreDataProperties.swift */; };
+		FD04CB37210DD533008776CD /* Thumbnail+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD04CB33210DD532008776CD /* Thumbnail+CoreDataClass.swift */; };
+		FD04CB38210DD533008776CD /* Thumbnail+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD04CB34210DD532008776CD /* Thumbnail+CoreDataProperties.swift */; };
+		FD04CB3A210E3CBA008776CD /* AdminProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD04CB39210E3CBA008776CD /* AdminProfileViewController.swift */; };
 		FD0E178420DD2915003F2330 /* BuildSchoolViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD0E178320DD2915003F2330 /* BuildSchoolViewController.swift */; };
 		FD0E178620DD2DE0003F2330 /* AddSubjectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD0E178520DD2DE0003F2330 /* AddSubjectViewController.swift */; };
 		FD21824020FB0DDB005DB2F8 /* AdminHelpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD21823F20FB0DDB005DB2F8 /* AdminHelpViewController.swift */; };
@@ -53,6 +59,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FD04CB2F210DCDCA008776CD /* BackgroundPicture.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BackgroundPicture.xcdatamodel; sourceTree = "<group>"; };
+		FD04CB31210DD532008776CD /* FullRes+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FullRes+CoreDataClass.swift"; sourceTree = "<group>"; };
+		FD04CB32210DD532008776CD /* FullRes+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FullRes+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		FD04CB33210DD532008776CD /* Thumbnail+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Thumbnail+CoreDataClass.swift"; sourceTree = "<group>"; };
+		FD04CB34210DD532008776CD /* Thumbnail+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Thumbnail+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		FD04CB39210E3CBA008776CD /* AdminProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminProfileViewController.swift; sourceTree = "<group>"; };
 		FD0E178320DD2915003F2330 /* BuildSchoolViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildSchoolViewController.swift; sourceTree = "<group>"; };
 		FD0E178520DD2DE0003F2330 /* AddSubjectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddSubjectViewController.swift; sourceTree = "<group>"; };
 		FD21823F20FB0DDB005DB2F8 /* AdminHelpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminHelpViewController.swift; sourceTree = "<group>"; };
@@ -125,6 +137,10 @@
 		FDBE752020D1260E00D4C15D = {
 			isa = PBXGroup;
 			children = (
+				FD04CB31210DD532008776CD /* FullRes+CoreDataClass.swift */,
+				FD04CB32210DD532008776CD /* FullRes+CoreDataProperties.swift */,
+				FD04CB33210DD532008776CD /* Thumbnail+CoreDataClass.swift */,
+				FD04CB34210DD532008776CD /* Thumbnail+CoreDataProperties.swift */,
 				FDBE752B20D1260E00D4C15D /* Xenoapp */,
 				FDBE752A20D1260E00D4C15D /* Products */,
 				FD21824320FB23BD005DB2F8 /* Frameworks */,
@@ -187,6 +203,8 @@
 				FD25A8F8210716F400B285C1 /* CoachingAddFacultyViewController.swift */,
 				FD4E25F6210BA1CD0033B8DE /* Profile1ViewController.swift */,
 				FD4E25F8210C3FD70033B8DE /* Report1ViewController.swift */,
+				FD04CB2E210DCDCA008776CD /* BackgroundPicture.xcdatamodeld */,
+				FD04CB39210E3CBA008776CD /* AdminProfileViewController.swift */,
 			);
 			path = Xenoapp;
 			sourceTree = "<group>";
@@ -267,6 +285,7 @@
 				FDF8EF0E20DA508A0074AFF5 /* myCell2.swift in Sources */,
 				FDD3CCF320F23701001354B1 /* CoachingTeacherViewController.swift in Sources */,
 				FDD3CD0320F771B0001354B1 /* AdminMenuViewController.swift in Sources */,
+				FD04CB37210DD533008776CD /* Thumbnail+CoreDataClass.swift in Sources */,
 				FD4E25F7210BA1CD0033B8DE /* Profile1ViewController.swift in Sources */,
 				FDA5022320E3EC9B0030DAA6 /* ExamsViewController.swift in Sources */,
 				FDF8EF0A20DA1EF80074AFF5 /* StudentIDViewController.swift in Sources */,
@@ -274,6 +293,7 @@
 				FD4E25F9210C3FD80033B8DE /* Report1ViewController.swift in Sources */,
 				FDD3CCFF20F4785B001354B1 /* StudentMenuViewController.swift in Sources */,
 				FDD3CD0520F9C3BC001354B1 /* ChangePasswordAdminViewController.swift in Sources */,
+				FD04CB38210DD533008776CD /* Thumbnail+CoreDataProperties.swift in Sources */,
 				FDBE752F20D1260E00D4C15D /* LoginPageViewController.swift in Sources */,
 				FDA5022520E40CB30030DAA6 /* PhotoGalleryViewController.swift in Sources */,
 				FDD3CD0120F70BDE001354B1 /* CoachingAdminViewController.swift in Sources */,
@@ -289,11 +309,15 @@
 				FD25A8F321064F8D00B285C1 /* CoachingAdminViewTeacherViewController.swift in Sources */,
 				FDD3CCFD20F38286001354B1 /* FeedbackTeacherViewController.swift in Sources */,
 				FD21826720FDF786005DB2F8 /* ForgotIDViewController.swift in Sources */,
+				FD04CB30210DCDCA008776CD /* BackgroundPicture.xcdatamodeld in Sources */,
+				FD04CB3A210E3CBA008776CD /* AdminProfileViewController.swift in Sources */,
 				FDBFCE6A20D7666B0064A76D /* myCell.swift in Sources */,
+				FD04CB36210DD533008776CD /* FullRes+CoreDataProperties.swift in Sources */,
 				FDBE752D20D1260E00D4C15D /* AppDelegate.swift in Sources */,
 				FDD3CCF720F273EB001354B1 /* SWRevealViewController.m in Sources */,
 				FD21824020FB0DDB005DB2F8 /* AdminHelpViewController.swift in Sources */,
 				FDBFCE6420D540B00064A76D /* RegisterPageViewController.swift in Sources */,
+				FD04CB35210DD533008776CD /* FullRes+CoreDataClass.swift in Sources */,
 				FD21824220FB1600005DB2F8 /* AdminHelpTableViewCell.swift in Sources */,
 				FDF8EF1220DCAD5E0074AFF5 /* AdminIDViewController.swift in Sources */,
 				FDD3CCF120F21E83001354B1 /* CoachingStudentViewController.swift in Sources */,
@@ -506,6 +530,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		FD04CB2E210DCDCA008776CD /* BackgroundPicture.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				FD04CB2F210DCDCA008776CD /* BackgroundPicture.xcdatamodel */,
+			);
+			currentVersion = FD04CB2F210DCDCA008776CD /* BackgroundPicture.xcdatamodel */;
+			path = BackgroundPicture.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = FDBE752120D1260E00D4C15D /* Project object */;
 }

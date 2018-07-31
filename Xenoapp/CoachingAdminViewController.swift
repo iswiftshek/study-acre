@@ -7,10 +7,19 @@
 //
 
 import UIKit
-
+import CoreData
 
 
 class CoachingAdminViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+    
+    let imageProcessingQueue = DispatchQueue(label: "imageProcessingQueue", attributes: DispatchQueue.Attributes.concurrent)
+    
+    /// A dispatch queue for the Core Data managed context
+    let coreDataQueue = DispatchQueue(label: "coreDataQueue")
+    
+    /// The Core Data managed context
+    var managedContext : NSManagedObjectContext?
+    
     
   
     @IBOutlet weak var backgroundPicture: UIImageView!
@@ -29,7 +38,7 @@ class CoachingAdminViewController: UIViewController, UICollectionViewDelegate, U
     }
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
-        let image = info[UIImagePickerControllerOriginalImage] as? UIImage
+        //let image = info[UIImagePickerControllerOriginalImage] as? UIImage
         
         picker.dismiss(animated: true, completion: nil)
     }
@@ -40,13 +49,14 @@ class CoachingAdminViewController: UIViewController, UICollectionViewDelegate, U
     @IBOutlet weak var btnMenuButton: UIBarButtonItem!
     @IBOutlet weak var studyAcreLabel3: UILabel!
     
-    let array1C3: [String] = ["waTeachers","waStudents","waBatches","waSchedule","waAssigning Duty","waSubstitute","waStudent Fee","waStaff Salary"]
-    let array2C3: [String] = ["Teachers","Students","Batches","Schedule","Assigning Duty","Substitute","Student Fee", "Staff Salary"]
+    let array1C3: [String] = ["waTeachers","waStudents","waBatches","waSubstitute","waStudent Fee","waStaff Salary"]
+    let array2C3: [String] = ["Teachers","Students","Batches","Extra Classes","Student Fee", "Staff Salary"]
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
       
-        
+    
         studyAcreLabel3.font = studyAcreLabel3.font.withSize(UIScreen.main.bounds.height/24.53)
         btnMenuButton.target = revealViewController()
         btnMenuButton.action =  #selector(SWRevealViewController.revealToggle(_:))
@@ -150,3 +160,12 @@ class CoachingAdminViewController: UIViewController, UICollectionViewDelegate, U
     */
 
 }
+
+
+/*extension CoachingAdminViewController {
+    func coreDataSetup() {
+        dispatch_sync(saveQueue) {
+            self.managedContext = AppDelegate().managedObjectContext
+        }
+    }
+}*/

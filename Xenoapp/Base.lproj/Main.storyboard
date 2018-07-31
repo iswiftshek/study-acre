@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="5ts-uh-31H">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="zS1-AP-1SR">
     <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -69,7 +69,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lc8-Yr-6GX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-9619" y="-1149"/>
+            <point key="canvasLocation" x="-7848" y="-1149"/>
         </scene>
         <!--Login Type View Controller-->
         <scene sceneID="ZgE-lR-te5">
@@ -3127,7 +3127,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tMv-Ok-jPe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-8746" y="-1149"/>
+            <point key="canvasLocation" x="-6855" y="-1149"/>
         </scene>
         <!--Storyboard Reference-->
         <scene sceneID="sFg-Gd-tP8">
@@ -3167,7 +3167,7 @@
             </objects>
             <point key="canvasLocation" x="2425" y="-86"/>
         </scene>
-        <!--Profile-->
+        <!--Help-->
         <scene sceneID="4M4-eL-8ni">
             <objects>
                 <viewController storyboardIdentifier="Profile1ViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="dfX-hu-7uA" customClass="Profile1ViewController" customModule="Xenoapp" customModuleProvider="target" sceneMemberID="viewController">
@@ -3514,16 +3514,24 @@
                         <viewLayoutGuide key="safeArea" id="yp5-AF-XEc"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Profile" image="tabbar1" id="8LN-ZV-Lzh"/>
+                    <navigationItem key="navigationItem" title="Help" id="GKD-kl-hdI" userLabel="View Profile">
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="menu" id="FOw-84-7O7" userLabel="Btn Menu Button">
+                            <color key="tintColor" red="1" green="0.1529411765" blue="0.16862745100000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="btnMenuButton:" destination="96S-6C-0NB" id="s6H-Ys-8Ou"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <size key="freeformSize" width="414" height="1500"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8vy-th-Byz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2424.6376811594205" y="-1184.5108695652175"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Admin Profile View Controller-->
         <scene sceneID="Cse-3Y-vaw">
             <objects>
-                <tabBarController id="w24-Ws-22f" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="AdminProfileViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="w24-Ws-22f" customClass="AdminProfileViewController" customModule="Xenoapp" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="3Zg-KT-EF1">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -3531,10 +3539,19 @@
                         <color key="selectedImageTintColor" red="0.8980392157" green="0.1333333333" blue="0.0078431372550000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBar>
                     <connections>
+                        <outlet property="btnMenuButton" destination="OYs-Tg-lF5" id="pDt-cv-bK1"/>
                         <segue destination="dfX-hu-7uA" kind="relationship" relationship="viewControllers" id="uW7-gz-qA5"/>
                         <segue destination="MX0-Ee-X7e" kind="relationship" relationship="viewControllers" id="oa7-fq-x8R"/>
                     </connections>
                 </tabBarController>
+                <navigationItem title="Help" id="Hld-j1-um9" userLabel="View Profile">
+                    <barButtonItem key="leftBarButtonItem" title="Item" image="menu" id="OYs-Tg-lF5" userLabel="Btn Menu Button">
+                        <color key="tintColor" red="1" green="0.1529411765" blue="0.16862745100000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <connections>
+                            <action selector="btnMenuButton:" destination="96S-6C-0NB" id="r1a-BT-l5W"/>
+                        </connections>
+                    </barButtonItem>
+                </navigationItem>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PoJ-Yu-TOK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1448" y="-634"/>
@@ -3559,7 +3576,7 @@
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cellTV2" id="gX4-0n-eHz" customClass="ViewTeachersCollectionViewCell" customModule="Xenoapp" customModuleProvider="target">
-                                        <rect key="frame" x="9.6666666666666661" y="0.0" width="395" height="54"/>
+                                        <rect key="frame" x="10" y="0.0" width="395" height="54"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
                                             <rect key="frame" x="0.0" y="0.0" width="395" height="54"/>
