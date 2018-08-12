@@ -27,6 +27,8 @@
 		FD25A8F9210716F400B285C1 /* CoachingAddFacultyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD25A8F8210716F400B285C1 /* CoachingAddFacultyViewController.swift */; };
 		FD4E25F7210BA1CD0033B8DE /* Profile1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4E25F6210BA1CD0033B8DE /* Profile1ViewController.swift */; };
 		FD4E25F9210C3FD80033B8DE /* Report1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4E25F8210C3FD70033B8DE /* Report1ViewController.swift */; };
+		FD7E936521138AF100AF4504 /* CoachingAdminViewStudentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7E936421138AF100AF4504 /* CoachingAdminViewStudentViewController.swift */; };
+		FD7E936721170AFB00AF4504 /* CoachingAdminViewStudentViewStudentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7E936621170AFB00AF4504 /* CoachingAdminViewStudentViewStudentViewController.swift */; };
 		FD96E9E820DD39A200954A7A /* AddClassesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD96E9E720DD39A200954A7A /* AddClassesViewController.swift */; };
 		FD96E9EA20DD788800954A7A /* ViewClassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD96E9E920DD788800954A7A /* ViewClassViewController.swift */; };
 		FDA4558C20E6015A0027EDEA /* SubAdminViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA4558B20E6015A0027EDEA /* SubAdminViewController.swift */; };
@@ -79,6 +81,8 @@
 		FD25A8F8210716F400B285C1 /* CoachingAddFacultyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoachingAddFacultyViewController.swift; sourceTree = "<group>"; };
 		FD4E25F6210BA1CD0033B8DE /* Profile1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile1ViewController.swift; sourceTree = "<group>"; };
 		FD4E25F8210C3FD70033B8DE /* Report1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Report1ViewController.swift; sourceTree = "<group>"; };
+		FD7E936421138AF100AF4504 /* CoachingAdminViewStudentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoachingAdminViewStudentViewController.swift; sourceTree = "<group>"; };
+		FD7E936621170AFB00AF4504 /* CoachingAdminViewStudentViewStudentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoachingAdminViewStudentViewStudentViewController.swift; sourceTree = "<group>"; };
 		FD96E9E720DD39A200954A7A /* AddClassesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddClassesViewController.swift; sourceTree = "<group>"; };
 		FD96E9E920DD788800954A7A /* ViewClassViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewClassViewController.swift; sourceTree = "<group>"; };
 		FDA4558B20E6015A0027EDEA /* SubAdminViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubAdminViewController.swift; sourceTree = "<group>"; };
@@ -205,6 +209,8 @@
 				FD4E25F8210C3FD70033B8DE /* Report1ViewController.swift */,
 				FD04CB2E210DCDCA008776CD /* BackgroundPicture.xcdatamodeld */,
 				FD04CB39210E3CBA008776CD /* AdminProfileViewController.swift */,
+				FD7E936421138AF100AF4504 /* CoachingAdminViewStudentViewController.swift */,
+				FD7E936621170AFB00AF4504 /* CoachingAdminViewStudentViewStudentViewController.swift */,
 			);
 			path = Xenoapp;
 			sourceTree = "<group>";
@@ -316,10 +322,12 @@
 				FDBE752D20D1260E00D4C15D /* AppDelegate.swift in Sources */,
 				FDD3CCF720F273EB001354B1 /* SWRevealViewController.m in Sources */,
 				FD21824020FB0DDB005DB2F8 /* AdminHelpViewController.swift in Sources */,
+				FD7E936721170AFB00AF4504 /* CoachingAdminViewStudentViewStudentViewController.swift in Sources */,
 				FDBFCE6420D540B00064A76D /* RegisterPageViewController.swift in Sources */,
 				FD04CB35210DD533008776CD /* FullRes+CoreDataClass.swift in Sources */,
 				FD21824220FB1600005DB2F8 /* AdminHelpTableViewCell.swift in Sources */,
 				FDF8EF1220DCAD5E0074AFF5 /* AdminIDViewController.swift in Sources */,
+				FD7E936521138AF100AF4504 /* CoachingAdminViewStudentViewController.swift in Sources */,
 				FDD3CCF120F21E83001354B1 /* CoachingStudentViewController.swift in Sources */,
 				FD25A8F52106548200B285C1 /* ViewTeachersCollectionViewCell.swift in Sources */,
 				FDA4558C20E6015A0027EDEA /* SubAdminViewController.swift in Sources */,
