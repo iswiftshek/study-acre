@@ -10,6 +10,9 @@ import UIKit
 import QuartzCore
 
 class LoginPageViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource, UITextFieldDelegate {
+    @IBAction func backButtonPressed(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
     
 @IBOutlet weak var passwordButton: UITextField!
 @IBOutlet weak var emailID: UITextField!
@@ -49,7 +52,7 @@ class LoginPageViewController: UIViewController, UIPickerViewDelegate, UIPickerV
             alert.addAction(UIAlertAction.init(title: "OK", style: .cancel, handler: nil))
             self.present(alert, animated: true, completion: nil)
             return
-            
+            //http://xenottabyte.in/Xenotapp/school_api.php?ACTION=Login&sluid
         }
         
         // Send user data to server side
