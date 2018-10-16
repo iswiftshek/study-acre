@@ -52,6 +52,7 @@ class CoachingAdminViewController: UIViewController, UICollectionViewDelegate, U
     let array1C3: [String] = ["waTeachers","waStudents","waBatches","waSubstitute","waStudent Fee","waStaff Salary"]
     let array2C3: [String] = ["Teachers","Students","Batches","Extra Classes","Student Fee", "Staff Salary"]
     
+   
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -123,6 +124,21 @@ class CoachingAdminViewController: UIViewController, UICollectionViewDelegate, U
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let cellSelected = collectionView.cellForItem(at: indexPath) as! myCell2
+        if cellSelected.myLabel2.text == "Teachers" {
+            let nextVC = self.storyboard?.instantiateViewController(withIdentifier: "CoachingAdminViewTeacherViewController") as! CoachingAdminViewTeacherViewController
+           // nextVC.className = cell.nameLabel.text!
+            present(nextVC, animated: true, completion: nil)
+        }
+        if cellSelected.myLabel2.text == "Students" {
+            let nextVC = self.storyboard?.instantiateViewController(withIdentifier: "CoachingAdminViewStudentViewController") as! CoachingAdminViewStudentViewController
+            // nextVC.className = cell.nameLabel.text!
+            present(nextVC, animated: true, completion: nil)
+            
+        }
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {

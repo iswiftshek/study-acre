@@ -11,9 +11,20 @@ import UIKit
 class Profile1ViewController: UIViewController {
 
    
+    @IBAction func backButtonPressed(_ sender: Any) {
+        let mainstoryboard:UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let newViewcontroller = mainstoryboard.instantiateViewController(withIdentifier: "SWRevealViewController3") 
+        newViewcontroller.modalTransitionStyle = .flipHorizontal
+       // let newFrontController = UINavigationController.init(rootViewController: newViewcontroller)
+       // newFrontController.modalTransitionStyle = .flipHorizontal
+       // revealViewController().pushFrontViewController(newFrontController, animated: true)
+        self.present(newViewcontroller, animated: true, completion: nil)
+    }
     @IBOutlet weak var genderTextField: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.navigationController?.setNavigationBarHidden(true, animated: true)
   
        
 

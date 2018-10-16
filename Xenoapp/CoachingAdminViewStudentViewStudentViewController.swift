@@ -293,19 +293,19 @@ class CoachingAdminViewStudentViewStudentViewController: UIViewController, UICol
             
             if let cell = collectionViewTable?.cellForItem(at: indexPath) as? ViewTeachersCollectionViewCell {
                 
+               
                 
                 
-                
-                let inputAlert = UIAlertController(title: "Delete", message: "Are you sure you want to delete this class?", preferredStyle: .alert)
+                let inputAlert = UIAlertController(title: "Deactivate", message: "Are you sure you want to deactivate this student?", preferredStyle: .alert)
                 inputAlert.addAction(UIAlertAction(title: "Yes", style: .default, handler: { (action:UIAlertAction) in
                     
-                    
-                    let myUrl = NSURL(string: "http://xenottabyte.in/XenotappWorking/coaching_api.php?ACTION=DeleteClass&sluid=XENO65337")
+                    //&student_id=STUD48498
+                    let myUrl = NSURL(string: "http://xenottabyte.in/XenotappWorking/coaching_api.php?ACTION=DeActivateStudent&sluid=XENO65337")
                     let request = NSMutableURLRequest(url: myUrl! as URL)
                     request.httpMethod = "POST"
                     
                     
-                    let postString = "class_id=\(cell.emp_uid)"
+                    let postString = "student_id=\(cell.emp_uid)"
                     request.httpBody = postString.data(using: String.Encoding.utf8)
                     
                     let task = URLSession.shared.dataTask(with: request as URLRequest){

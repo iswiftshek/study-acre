@@ -10,7 +10,7 @@ import UIKit
 
 class CoachingAdminViewStudentViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UISearchBarDelegate {
     
-    
+    var boolHelp3 = false
     
     @IBAction func backButtonPressed(_ sender: Any) {
          self.dismiss(animated: true, completion: nil)
@@ -30,6 +30,7 @@ class CoachingAdminViewStudentViewController: UIViewController, UICollectionView
         
     }
     @IBAction func addButtonPressed(_ sender: Any) {
+        
         let inputAlert = UIAlertController(title: "New Class", message: "Add the details", preferredStyle: .alert)
         inputAlert.addTextField { (textfield:UITextField) in
             textfield.placeholder = "Class Name"
@@ -127,8 +128,12 @@ class CoachingAdminViewStudentViewController: UIViewController, UICollectionView
 
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
+        
+        
         if deleteButton.currentImage == UIImage(named: "whitetick") {
             if let cell = collectionViewTable?.cellForItem(at: indexPath) as? ViewTeachersCollectionViewCell {
+                
+               
                 
                 let inputAlert = UIAlertController(title: "Delete", message: "Are you sure you want to delete this class?", preferredStyle: .alert)
                 inputAlert.addAction(UIAlertAction(title: "Yes", style: .default, handler: { (action:UIAlertAction) in
@@ -166,6 +171,60 @@ class CoachingAdminViewStudentViewController: UIViewController, UICollectionView
             }
             
         }
+            //http://xenottabyte.in/XenotappWorking/coaching_api.php?ACTION=UpdateClass&class_id=2&sluid=XENO65337&class_name=7
+        else if editButton.currentImage == UIImage(named: "whitetick") {
+            
+             if let cell = collectionViewTable?.cellForItem(at: indexPath) as? ViewTeachersCollectionViewCell {
+                
+                let inputAlert = UIAlertController(title: "Update Class", message: "Add the new Class Name", preferredStyle: .alert)
+                inputAlert.addTextField { (textfield:UITextField) in
+                    textfield.placeholder = "Name"
+                }
+                
+                inputAlert.addAction(UIAlertAction(title: "Update", style: .default, handler: { (action:UIAlertAction) in
+                    let nameTextField = inputAlert.textFields![0] as UITextField
+                    
+                    
+                    let myUrl = NSURL(string: "http://xenottabyte.in/XenotappWorking/coaching_api.php?ACTION=UpdateClass&sluid=XENO65337")
+                    let request = NSMutableURLRequest(url: myUrl! as URL)
+                    request.httpMethod = "POST"
+                    
+                    
+                    let postString = "class_id=\(cell.emp_uid)&class_name=\(nameTextField.text!)"
+                    
+                    request.httpBody = postString.data(using: String.Encoding.utf8)
+                    
+                    let task = URLSession.shared.dataTask(with: request as URLRequest){
+                        data, response, error in
+                        
+                        if(error == nil) {
+                            print(response!)
+                            self.boolHelp3 = true
+                            self.alertHelper3()
+                            self.parseData()
+                        }
+                            
+                        else if error != nil {
+                            self.boolHelp3 = false
+                            self.alertHelper3()
+                            print("error=\(String(describing: error))")
+                            return
+                        }
+                    }
+                    task.resume()
+                    
+                    
+                }))
+                
+                inputAlert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
+                self.present(inputAlert, animated: true, completion: nil)
+                
+                
+                
+            }
+            
+        }
+            
         else {
             if let cell = collectionViewTable?.cellForItem(at: indexPath) as? ViewTeachersCollectionViewCell {
                 let nextVC = self.storyboard?.instantiateViewController(withIdentifier: "CoachingAdminViewStudentViewStudentViewController") as! CoachingAdminViewStudentViewStudentViewController
@@ -176,6 +235,27 @@ class CoachingAdminViewStudentViewController: UIViewController, UICollectionView
         }
     }
    
+    func alertHelper3(){
+        
+        if boolHelp3 == true {
+            
+            
+            let alert3 = UIAlertController(title: "Done", message: "The class was updated.", preferredStyle: .alert)
+            alert3.addAction(UIAlertAction(title: "OK", style: .cancel, handler: { (abc) in
+                self.editClassDone()
+            }))
+            self.present(alert3, animated: true, completion: nil)
+        }
+        else {
+            let alert4 = UIAlertController(title: "Error", message: "Oops! Some error was encountered.", preferredStyle: .alert)
+            alert4.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
+            self.present(alert4, animated: true, completion: nil)
+            
+        }
+        boolHelp3 = false
+        
+    }
+    
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         if ArrayArr.count == 0 {
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cellTV5", for: indexPath) as! ViewTeachersCollectionViewCell
@@ -253,7 +333,50 @@ class CoachingAdminViewStudentViewController: UIViewController, UICollectionView
         searchBarBar.tintColor = UIColor.red
         searchBarBar.placeholder = "Search"
     }
+    @IBAction func editButtonPressed(_ sender: Any) {
+        if editButton.currentImage == UIImage(named: "edit") {
+            editClassHelp()
+        }
+        else {
+            editClassDone()
+           
+        }
+    }
     
+    func editClassDone(){
+        addButton.isEnabled = true
+        deleteButton.isEnabled = true
+        editButton.setImage(UIImage(named: "edit"), for: .normal)
+        if let indexPaths = collectionViewTable?.indexPathsForVisibleItems {
+            
+            for indexPath in indexPaths {
+                if let cell = collectionViewTable?.cellForItem(at: indexPath) as? ViewTeachersCollectionViewCell {
+                    if cell.nameLabel.text != "Press (+) to add a faculty" {
+                        cell.forwardArror.image = UIImage(named:"farrow")
+                    }
+                }
+                
+            }
+        }
+        
+        
+    }
+    
+    func editClassHelp(){
+        if let indexPaths = collectionViewTable?.indexPathsForVisibleItems {
+            addButton.isEnabled = false
+            deleteButton.isEnabled = false
+            editButton.setImage(UIImage(named:"whitetick"), for: .normal)
+            for indexPath in indexPaths {
+                if let cell = collectionViewTable?.cellForItem(at: indexPath) as? ViewTeachersCollectionViewCell {
+                    if cell.nameLabel.text != "Press (+) to add a faculty" {
+                        cell.forwardArror.image = UIImage(named: "editPencil")
+                    }}
+            }
+        }
+    }
+    
+    @IBOutlet weak var editButton: UIButton!
     
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         if searchText == ""

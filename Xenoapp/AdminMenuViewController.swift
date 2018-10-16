@@ -49,6 +49,13 @@ class AdminMenuViewController: UIViewController, UITableViewDataSource, UITableV
             revealViewController.pushFrontViewController(newFrontController, animated: true)
             
         }
+        if cell.lblMenuName.text! == "Home" {
+           
+            let mainstoryboard:UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+            let newViewcontroller = mainstoryboard.instantiateViewController(withIdentifier: "CoachingAdminViewController") as! CoachingAdminViewController
+            let newFrontController = UINavigationController.init(rootViewController: newViewcontroller)
+            revealViewController.pushFrontViewController(newFrontController, animated: true)
+        }
         if cell.lblMenuName.text! == "Help"
         {
             let mainstoryboard:UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
@@ -96,8 +103,8 @@ class AdminMenuViewController: UIViewController, UITableViewDataSource, UITableV
         nameLabel3.font = nameLabel3.font.withSize(UIScreen.main.bounds.height/43.29)
         emailIDLabel3.font = emailIDLabel3.font.withSize(UIScreen.main.bounds.height/56.61)
         
-        menuNameArr = ["Profile Details","Change Password", "Refer a Friend","Help","Feedback","Logout"]
-        iconImage = [UIImage(named: "sProfile")!, UIImage(named: "gChange Password")!,UIImage(named: "gRefer a Friend")!,UIImage(named: "gHelp")!,UIImage(named: "gFeedback")!, UIImage(named: "sLogout")!]
+        menuNameArr = ["Home","Profile Details","Change Password", "Refer a Friend","Help","Feedback","Logout"]
+        iconImage = [UIImage(named: "waHome")!,UIImage(named: "sProfile")!, UIImage(named: "gChange Password")!,UIImage(named: "gRefer a Friend")!,UIImage(named: "gHelp")!,UIImage(named: "gFeedback")!, UIImage(named: "sLogout")!]
 
         // Do any additional setup after loading the view.
     }

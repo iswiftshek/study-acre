@@ -44,6 +44,7 @@
 		FDBFCE6420D540B00064A76D /* RegisterPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDBFCE6320D540B00064A76D /* RegisterPageViewController.swift */; };
 		FDBFCE6620D7462E0064A76D /* ParentIDViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDBFCE6520D7462E0064A76D /* ParentIDViewController.swift */; };
 		FDBFCE6A20D7666B0064A76D /* myCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDBFCE6920D7666B0064A76D /* myCell.swift */; };
+		FDC9A7E6212707B1008BB055 /* LoginCoachingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDC9A7E5212707B0008BB055 /* LoginCoachingViewController.swift */; };
 		FDD3CCF120F21E83001354B1 /* CoachingStudentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD3CCF020F21E83001354B1 /* CoachingStudentViewController.swift */; };
 		FDD3CCF320F23701001354B1 /* CoachingTeacherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD3CCF220F23701001354B1 /* CoachingTeacherViewController.swift */; };
 		FDD3CCF720F273EB001354B1 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDD3CCF520F273EA001354B1 /* SWRevealViewController.m */; };
@@ -100,6 +101,7 @@
 		FDBFCE6320D540B00064A76D /* RegisterPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterPageViewController.swift; sourceTree = "<group>"; };
 		FDBFCE6520D7462E0064A76D /* ParentIDViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentIDViewController.swift; sourceTree = "<group>"; };
 		FDBFCE6920D7666B0064A76D /* myCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myCell.swift; sourceTree = "<group>"; };
+		FDC9A7E5212707B0008BB055 /* LoginCoachingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCoachingViewController.swift; sourceTree = "<group>"; };
 		FDD3CCF020F21E83001354B1 /* CoachingStudentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoachingStudentViewController.swift; sourceTree = "<group>"; };
 		FDD3CCF220F23701001354B1 /* CoachingTeacherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoachingTeacherViewController.swift; sourceTree = "<group>"; };
 		FDD3CCF420F273E9001354B1 /* Xenoapp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Xenoapp-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -211,6 +213,7 @@
 				FD04CB39210E3CBA008776CD /* AdminProfileViewController.swift */,
 				FD7E936421138AF100AF4504 /* CoachingAdminViewStudentViewController.swift */,
 				FD7E936621170AFB00AF4504 /* CoachingAdminViewStudentViewStudentViewController.swift */,
+				FDC9A7E5212707B0008BB055 /* LoginCoachingViewController.swift */,
 			);
 			path = Xenoapp;
 			sourceTree = "<group>";
@@ -319,6 +322,7 @@
 				FD04CB3A210E3CBA008776CD /* AdminProfileViewController.swift in Sources */,
 				FDBFCE6A20D7666B0064A76D /* myCell.swift in Sources */,
 				FD04CB36210DD533008776CD /* FullRes+CoreDataProperties.swift in Sources */,
+				FDC9A7E6212707B1008BB055 /* LoginCoachingViewController.swift in Sources */,
 				FDBE752D20D1260E00D4C15D /* AppDelegate.swift in Sources */,
 				FDD3CCF720F273EB001354B1 /* SWRevealViewController.m in Sources */,
 				FD21824020FB0DDB005DB2F8 /* AdminHelpViewController.swift in Sources */,

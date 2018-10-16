@@ -14,6 +14,8 @@ class AdminProfileViewController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        
+        
         btnMenuButton.target = revealViewController()
         btnMenuButton.action =  #selector(SWRevealViewController.revealToggle(_:))
         // Do any additional setup after loading the view.

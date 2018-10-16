@@ -48,7 +48,8 @@ class LoginTypeViewController: UIViewController, UIGestureRecognizerDelegate {
     }
     
     @objc func coachingPageOpen(){
-        print("ay")
+        let helperVC3 = self.storyboard?.instantiateViewController(withIdentifier: "LoginCoachingViewController") as! LoginCoachingViewController
+        self.present(helperVC3, animated: true, completion: nil)
     }
 
     /*
