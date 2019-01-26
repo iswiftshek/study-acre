@@ -11,6 +11,7 @@
 ### Libraries/Frameworks used and their documentation
 
 - UIKit [Docs](https://developer.apple.com/documentation/uikit/)
+- CoreData [Docs](https://developer.apple.com/documentation/coredata)
 - QuartzCore [Docs](https://developer.apple.com/documentation/quartzcore)
 - SWRevealViewController [Docs](https://github.com/John-Lluch/SWRevealViewController)
 
